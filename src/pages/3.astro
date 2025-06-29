@@ -80,7 +80,7 @@ import nathalieJolie2 from '@public/3/imgs/nathalie-jolie-2.jpg'
 	<div class='flex h-[calc(100svh-5rem)]'>
 		<div
 			id='left-col'
-			class='flex flex-1 -translate-x-full flex-col items-center justify-center gap-y-4 bg-orange-50 text-center'
+			class='flex flex-1 -translate-x-full flex-col items-center justify-center gap-y-4 overflow-hidden bg-orange-50 p-4 text-center'
 		>
 			<h1
 				class='left-col-item -translate-x-20 rounded-lg border border-stone-900 px-4 py-2 text-2xl font-bold opacity-0'
@@ -92,14 +92,18 @@ import nathalieJolie2 from '@public/3/imgs/nathalie-jolie-2.jpg'
 				A NEW COLLECTION OF OUTDOOR PHOTOGRAPHY
 			</h2>
 
-			<Image
-				src={nathalieJolie2}
-				width={400}
-				height={400}
-				loading='eager'
-				alt='Nathalie Jolie center'
-				class='left-col-item size-80 -translate-x-20 rounded-lg object-cover opacity-0'
-			/>
+			<div
+				class='left-col-item -translate-x-20 overflow-hidden rounded-lg opacity-0'
+			>
+				<Image
+					src={nathalieJolie2}
+					width={400}
+					height={400}
+					loading='eager'
+					alt='Nathalie Jolie center'
+					class='size-full object-contain'
+				/>
+			</div>
 
 			<p
 				class='left-col-item w-96 -translate-x-20 text-balance font-normal opacity-0'
